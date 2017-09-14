@@ -1,0 +1,594 @@
+li {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+
+/**************
+===============
+===============
+====HEADER=====
+===============
+===============
+**************/
+
+#header {
+  background-color: #00162D;
+}
+
+
+/***************
+
+      DIV
+   Top Site
+
+***************/
+
+.topBar {
+  height: 90px;
+}
+
+.toAlign {
+  display: inline-block;
+}
+
+.osteo {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  color: whitesmoke;
+  background-color: #00D3FF;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.title {
+  margin-left: 25px;
+}
+
+.numberTop {
+  margin-left: 68px;
+}
+
+.fb {
+  width: 70px;
+  height: 70px;
+  margin-top: -20px;
+  margin-left: 75px;
+}
+
+
+/***************
+
+      DIV
+   Menu Site
+
+***************/
+
+.menu li a {
+  display: inline;
+}
+
+.optionMenu {
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.line {
+  background-color: #00D3FF;
+  height: 3px;
+}
+
+.optionMenu:hover {
+  color: #212121;
+  transition-duration: 0.9s;
+  background-color: #00D3FF;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+
+/**************
+===============
+===============
+====SECTION====
+===============
+===============
+**************/
+
+
+/***************
+
+      DIV
+   First Part
+
+***************/
+
+h4 {
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: #004488;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.topTitle {
+  margin-top: 30px;
+  font-size: 35px;
+  margin-bottom: 0;
+  font-family: 'Oswald', sans-serif;
+  margin-left: -9px;
+}
+
+.slider {
+  width: 100%;
+  height: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 40em) {
+  .slider {
+    margin-top: 40px;
+    margin-left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .slider {
+    margin-top: 14px;
+    margin-left: -15px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: slider 15s infinite;
+}
+
+.slider figure img {
+  width: 20%;
+  height: 30%;
+  float: left;
+}
+
+@keyframes slider {
+  0%,
+  20%,
+  100% {
+    left: 0
+  }
+  25%,
+  45% {
+    left: -100%
+  }
+  50%,
+  70% {
+    left: -200%
+  }
+  75%,
+  95% {
+    left: -300%
+  }
+}
+
+
+/***************
+
+      DIV
+First Rectangle
+
+***************/
+
+.firstRectangle {
+  margin-top: 30px;
+  background-color: #00D3FF;
+  width 900px;
+  height: 150px;
+  border-radius: 3px;
+}
+
+.parentImg {
+  display: flex;
+  width: 150px;
+  height: 150px;
+}
+
+.childImg {
+  margin: auto;
+  width: 140px;
+  height: 140px;
+}
+
+.nom {
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h5,
+.rightInformations p {
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.rightInformations p {
+  margin-top: -15px;
+  font-family: 'Oswald';
+}
+
+h5 {
+  margin-bottom: -3px;
+  font-family: 'Oswald';
+  font-size: 16px;
+}
+
+
+/***************
+
+      DIV
+White Rectangle
+
+***************/
+
+.whiteRectangle {
+  height: 85px;
+  background-color: white;
+}
+
+.phone p {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: -30px;
+  color: #212121;
+  text-align: center;
+}
+
+.mail p {
+  margin-top: -35px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #212121;
+}
+
+.mail img,
+.phone img {
+  width: 30px;
+  height: 30px;
+}
+
+.phone img {
+  margin-top: 5px;
+  margin-left: 95px;
+}
+
+.mail img {
+  margin-top: -5px;
+  margin-left: 50px;
+}
+
+
+/***************
+
+      DIV
+ Last Rectangle
+
+***************/
+
+.lastRectangle {
+  background-color: #00D3FF;
+  width: 387px;
+  height: 243px;
+  border-radius: 3px;
+  padding-top: 5px;
+}
+
+.lastRectangle li {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.work {
+  margin-top: 3px;
+  margin-left: 130px;
+  margin-right: 130px;
+  text-align: center;
+}
+
+.available {
+  text-align: center;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: -5px;
+}
+
+.bgLine {
+  background-color: white;
+  padding-top: 60px;
+  height: 60px;
+}
+
+.line2 {
+  background-color: #00D3FF;
+  width: 200px;
+  margin: -20px auto 0 auto;
+  height: 5px;
+  border-radius: 3px;
+  margin-top: 60px;
+}
+
+
+/**************
+===============
+===============
+==SECOND PART==
+===============
+===============
+**************/
+
+.bgSecondPart {
+  background-color: white;
+  box-shadow: 0 5px 5px grey;
+}
+
+.secondPart p,
+.thirdPart p,
+.fourthPart p,
+.fifthPart p {
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-align: center;
+}
+
+.secondPart,
+.thirdPart,
+.fourthPart,
+.fifthPart {
+  border-radius: 3px;
+}
+
+.secondPart {
+  height: 280px;
+  margin-top: 30px;
+}
+
+.secondPart h2,
+.thirdPart h2,
+.fourthPart h2,
+.fifthPart h2 {
+  color: #212121;
+  font-size: 80px;
+  font-weight: bold;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+
+/**************
+===============
+===============
+==THIRD PART===
+===============
+===============
+**************/
+
+.bgThirdPart {
+  background-color: whitesmoke;
+  margin-top: 8px;
+  box-shadow: 0 5px 5px grey;
+}
+
+.thirdPart {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.thirdPart h2 {}
+
+
+/**************
+===============
+===============
+==FOURTH PART==
+===============
+===============
+**************/
+
+.bgFourthPart {
+  background-color: #00162D;
+  box-shadow: 0 5px 5px grey;
+  height: 840px;
+}
+
+.fourthPart {
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.fourthPart h2 {
+  color: whitesmoke;
+}
+
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.picturesFourthPart img {
+  width: 220px;
+  height: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  transition: transform 0.9s;
+}
+
+.picturesFourthPart img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+/**************
+===============
+===============
+==FIFTH PART===
+===============
+===============
+**************/
+
+.fifthPart {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.fifthPart h2 {
+  margin-bottom: 50px;
+}
+
+.fifthPart ul {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.rectangleFifthPartFirstLine {
+  display: flex;
+  height: 280px;
+}
+
+.line3 {
+  background-color: #00D3FF;
+  width: 200px;
+  margin: 25px auto 0 auto;
+  height: 5px;
+  border-radius: 3px;
+}
+
+.rectangleFifthPartSecondLine {
+  display: flex;
+  height: 150px;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+}
+
+h3:hover {
+  font-size: 45px;
+  background-color: #00D3FF;
+  color: whitesmoke;
+  transition-duration: 0.5s;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+}
+
+
+/**************
+===============
+===============
+====FOOTER=====
+===============
+===============
+**************/
+
+#footer {
+  height: 130px;
+  background-color: #00162D;
+}
+
+.line4 {
+  height: 50px;
+  width: 3px;
+  margin-top: -55px;
+  background-color: aqua;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.divFlex {
+  display: flex;
+}
+
+.divFlex p {
+  color: whitesmoke;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  margin: 18px auto 0 auto;
+}
+
+.footerP {
+  display: flex;
+}
+
+.p1,
+.p2 {
+  color: whitesmoke;
+  margin: 18px auto 0 auto;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.retributions,
+.retributions a {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 7px;
+}
