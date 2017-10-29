@@ -1,14 +1,18 @@
-/**var test = document.querySelector(".title");
+let $h4 = document.querySelector('*')
 
-test.style.color = "green";
 
-var sticky = document.querySelector(".optionMenu");
 
-window.onscroll = function () {
-  if (window.pageYOffset > 20) {
-    sticky.classList.add("fixed");
-    sticky.style.top = 20;
-  } else {
-    sticky.classList.remove("fixed");
-  };
-}**/
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
+  {
+    $h4.style.letterSpacing = "-1px";
+    console.log('drule')
+  }
+
+$('a[href^="#"]').click(function(){
+	var the_id = $(this).attr("href");
+
+	$('html, body').animate({
+		scrollTop:$(the_id).offset().top-100
+	}, 'slow');
+	return false;
+});
