@@ -1,1065 +1,912 @@
 
-li {
-  font-family: 'Oswald', sans-serif;
-}
-
+/**BODY PROPERTIES**/
 body {
-  position: relative;
-}
-
-/**************
-===============
-===============
-====HEADER=====
-===============
-===============
-**************/
-
-#header {
-  background-color: #00162D;
-  position: fixed;
-  width: 100%;
-  z-index: 30;
+  background:radial-gradient(ellipse at center, #1B2735 0%, #090A0F 100%);
 }
 
 
-/***************
-
-DIV
-Top Site
-
-***************/
-
-.topBar {
-  height: 70px;
+/**FACES USED ON WEBSITE**/
+@font-face {
+  font-family: 'space_light';
+  src: url('../fonts/space_light.otf');
 }
 
-.osteo {
-  width: 100px;
-  height: 100px;
+@font-face {
+  font-family: 'space_bold';
+  src: url('../fonts/space_bold.otf');
 }
 
-h1 {
-  color: whitesmoke;
-  background-color: #00162D;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  margin-top: 10px;
-}
-
-.logo {
-  width: 70px;
-  height: 70px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.fb {
-  width: 70px;
-  height: 70px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-@media screen and (min-width: 40em) {
-  h1 {
-    background-color:#64B5F6; 
-    font-size: 22px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  h1 {
-    font-size: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-  }
+@font-face {
+  font-family: 'space_regular';
+  src: url('../fonts/space_regular.otf');
 }
 
 
-/***************
-
-DIV
-Menu Site
-
-***************/
-.topSite{
-  display: none;
-}
-
-.menu li a {
-  display: inline;
-}
-.menu{
-  margin-top: 5px;
-  margin-bottom: -12px;
-}
-.optionMenu {
-  font-size: 15px;
-  color: whitesmoke;
-  text-align: center;
-  font-weight: bold;
+/**H1 PROPERTIES**/
+h1{
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0px 20px 0px 20px;
-}
-
-.optionMenu:hover {
-  color: #212121;
-  transition-duration: 0.9s;
-  background-color: #64B5F6;
-  border-radius: 5px;
-  font-weight: bolder;
-}
-
-.textTop{
-  padding: 0 10px 0 10px;
-}
-@media screen and (min-width: 40em) {
-  .optionMenu {
-    font-size: 16px;
-    margin: 0 5px 0 5px;
-  }
-  .topSite{
-    display: inherit;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .optionMenu {
-    font-size: 20px;
-    margin: 0px 20px 0px 20px;
-  }
+  transform: translate(-10%,-30%);
+  position: absolute;
+  z-index: 50;
 }
 
 
 
+/**NAV PROPERTIES**/
+nav{
+  text-align: center;
+  margin: 10px 0;
+  position: absolute;
+  z-index: 60;
+}
 
-/***************
+.menu {
+  top: 50%;
+  left: 50%;
+  transform: translate(40%,200%);
+}
+/**LI PROPERTIES**/
+li{
+  display: inline-block;
+  width: 80px;
+  color: whitesmoke;
+}
 
-MENU BURGER
-
-***************/
 
 
-.miniTitle {
+/**A PROPERTIES**/
+a{
+  font-family: 'space_regular';
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/**
+
+
+CONTAINER PART
+
+
+**/
+
+
+/**SOLAR SYSTEM PROPERTIES**/
+.solarSystem {
   position: relative;
   width: 100%;
-  height: 60px;
-  display: inherit;
-  visibility: visible;
+  max-height: 100vh;
+   overflow: hidden;
 }
 
-.miniH1{
+
+.circleBlur2 {
+  overflow: hidden;
+  background-color: #284156;
+  height: 300px;
+  width: 400px;
+  top: 50%;
+  margin-top: -75px;
+  left: 50%;
+  margin-left: 275px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #284156;
+  filter: blur(60px);
   position: absolute;
-  color: whitesmoke;
-  border-radius: 5px;
-  font-size: 35px;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-}
-.miniMenuLi, .miniMenuA {
-  color: whitesmoke;
-  margin-left: 20px;
-  text-indent: -15px;
-  text-decoration: none;
-  text-transform: none;
-  list-style: none;
-  font-size: 21px;
-  font-family: 'Oswald', sans-serif;
-}
-.miniMenuA:focus {
-  color: #F50057;
-  font-weight: 700;
-  transition: .2s linear;
+  opacity: 0.05;
+  z-index:1;
 }
 
 
 
-#menu, label:before, label:after {
-  content: " ";
-  position: fixed;
-  left: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #00BCD4;
-  border-radius: 2px;
-  transition: .5s ease;  
+
+
+
+
+
+
+.starCanvas {
+  position: absolute;
+  z-index: 3
 }
 
-label {
-  position: fixed;
+
+.cross {
+  opacity: 0.03;
+  position: absolute;
   z-index: 1;
 }
-label:before { 
-  top: 20px;
-  left: 20px;
-}
-label:after { 
-  top: 20px;
-  left: 20px; 
-  transform: rotate(0deg);
+
+
+
+/**
+SUN CSS PART
+**/
+
+
+
+/**SUNON PROPERTY**/
+.sunOn {
+  transition: opacity 1s ease-in-out 1s;
 }
 
-#menu {
-  top: 60px;
-  width: 0px;
-  transition: .2s ease;
-  z-index: 0;
+
+/**SUNOFF PROPERTY**/
+.sunOff {
+  transition: opacity 1s ease-in-out;
 }
-#menu .miniMenuLi {
-  line-height: 0.5;
-  pointer-events: none;
+
+
+/**SUN PROPERTIES**/
+.sun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, #fff000 0%, #fcd440 50%, #fcd440 20%, #e06317 100%);
+  box-shadow: 0 0 8px 1px rgba(255, 100, 0, 0.6), 0 0 24px 10px rgba(255, 203, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  z-index: 5;
+}
+
+
+
+/**
+EARTH CSS PART
+**/
+
+.earthPart{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/**EARTHON PROPERTY**/
+.earthOn {
+  transition: opacity 1s ease-in-out 1s;
+}
+
+
+/**EARTHOFF PROPERTY**/
+.earthOff {
+  transition: opacity 1s ease-in-out;
+}
+
+
+/**EARTH CIRCLE PROPERTIES**/
+
+.earthCircle{
+width: 270px;
+  height: 270px;
+  top: 50%;
+  margin-top: -135px;
+  left: 50%;
+  margin-left: -138px;
+  background-color: rgba(0,0,0,0);
+  border: 3px solid #006064;
+  filter: blur(12px);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
+.earth{
+  width: 270px;
+  height: 270px;
+  top: 50%;
+  margin-top: -135px;
+  left: 50%;
+  margin-left: -138px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  animation: rotation 3.3s linear infinite;
+}
+
+/**MOON CREATION PROPERTIES**/
+.earth:before{
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 15px;
+  border-radius: 50%;
+  background-color: #CCC;
+  content: '';
+  position: absolute;
+  transform-origin: 60px;
+  animation: rotation 6s linear infinite;
+
+}
+
+/**EARTH CREATION PROPERTIES**/
+.earth:after{
+  width:40px;
+  height:40px;
+  left:38px;
+  top:6px;
+  border-radius: 50%;
+  background-color:#0058B0;
+  border-color:seagreen;
+  border-style:solid;
+  border-width: 4px 0 3px 0;
+  content:'';
+  position: absolute;
+  z-index: 6;
+
+}
+
+
+/**
+MARS CSS PART
+**/
+
+/**MARSON PROPERTY*/
+.marsOn {
+  transition: opacity 1s ease-in-out 1s;
+}
+
+/**MARSOFF PROPERTY*/
+.marsOff {
+  transition: opacity 1s ease-in-out;
+}
+
+/**MARS CIRCLE PROPERTIES*/
+
+.marsCircle{
+  width: 550px;
+  height: 550px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -275px;
+  background-color: rgba(0,0,0,0);
+  border: 3px solid #006064;
+  filter: blur(12px);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
+.mars{
+  width: 550px;
+  height: 550px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -275px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  animation: rotation 9s linear infinite;
+}
+
+/**MARS CREATION PROPERTIES**/
+.mars:after{
+  width:30px;
+  height:30px;
+  left: 35px;
+  top: 102px;
+  border-radius: 50%;
+  background-color:coral;
+  border-color:lightcoral;
+  border-style:solid;
+  border-width: 4px 1px 1px 1px;
+  content:'';
+  position: absolute;
+  z-index: 6;
+
+}
+
+
+/**ALLOW TO HIDE CONTENT**/
+.changeOpacity {
   opacity: 0;
 }
 
-#menu-toggle:checked + label:before {
-  top: 20px;
-  left: 20px;
-  transform: rotate(-45deg);
-}
-#menu-toggle:not(:checked) + label:after {
-  top: 20px;
-  left: 20px;
-  transform: rotate(45deg);
-}
-#menu-toggle:not(:checked) + label + #menu {
 
-  width: 200px;
-  height: 250px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-  transition: .3s ease .2s;
-  z-index: 2;
-}
-#menu-toggle:not(:checked) + label + #menu .miniMenuLi {
-  pointer-events: all;
-  font: 16pt 'Roboto', sans-serif;
-  line-height: 2.3;
-  opacity: 1;
-  z-index: 3;
-  transition: .2s ease .3s;
-}
-
-[type="checkbox"]:checked , [type="checkbox"]:not(:checked) {
-  display: none;
-}
-
-.trool{
-  display: inherit;
-}
-
-.textMenu{
-  pointer-events: none;
-  position: fixed;
-  top: 20px;
-  left: 31.5px;
-  font-size: 26px;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif;
-  z-index: 4;
-  color: whitesmoke;
-}
-
-@media screen and (min-width: 40em) {
-  .trool {
-    display: none;
-    visibility: hidden;
-  }
-
-  .miniTitle {
-    display: none;
-  }
-
-}
-
-@media screen and (min-width: 64em) {
-
-}
-
-/**************
-===============
-===============
-====SECTION====
-===============
-===============
-**************/
-
-
-/***************
-
-DIV
-First Part
-
-***************/
-.firstPart{
-  margin-top: 20px;
-}
-.leftRectangle{
-  margin-top: 37px;
-  display: none;
+/**ROTATION ANIMATION**/
+@keyframes rotation{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-360deg);}
 }
 
 
-h4 {
-  color: #64B5F6;
-  font-size: 20px;
-  background-color: whitesmoke;
-  font-weight: 600;
-  border-radius: 5px;
-  font-family: 'Oswald', sans-serif;
+/**
+EARTHSECTION CSS PART
+**/
+
+/**EARTHSECTIONON PROPERTY*/
+.earthSectionOn {
+  transition: opacity 1s ease-in-out 1s;
 }
 
-.topTitle {
-  margin-top: 30px;
-  font-size: 35px;
-  margin-bottom: 0;
-  font-family: 'Oswald', sans-serif;
-  margin-left: -9px;
+
+/**EARTHSECTIONOFF PROPERTY*/
+.earthSectionOff {
+  transition: opacity 1s ease-in-out;
 }
 
-.slider {
-  width: 100%;
-  height: 80%;
-  max-width: 800px;
+/**EARTHSECTION PROPERTIES**/
+.earthSection {
   overflow: hidden;
-  margin-top: 0px;
-  border-radius: 2px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 2px;
-  visibility: hidden;
-  display: none;
-}
-
-@media screen and (min-width: 40em) {
-
-  .slider {
-    visibility: hidden;
-    display: none;
-  }
-
-  .firstPart{
-    margin-top: 140px;
-  }
-
-}
-
-@media screen and (min-width: 64em) {
-
-  .slider {
-    visibility: visible;
-    display:inherit;
-  }
-
-  .leftRectangle{
-    display: inherit;
-  }
-
-  .firstPart{
-    margin-top: 120px;
-  }
-
-}
-
-.slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-  animation: slider 15s infinite;
-}
-
-.slider figure img {
-  width: 20%;
-  height: 30%;
-  float: left;
-}
-
-@keyframes slider {
-  0%,
-  20%,
-  100% {
-    left: 0
-  }
-  25%,
-  45% {
-    left: -100%
-  }
-  50%,
-  70% {
-    left: -200%
-  }
-  75%,
-  95% {
-    left: -300%
-  }
-
-
+  background-color: #22313F;
+  height: 350px;
+  width: 350px;
+  top: 50%;
+  margin-top: -175px;
+  left: 50%;
+  margin-left: -175px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #00C7FF;
+  filter: blur(0.75px);
+  position: absolute;
+  z-index:20;
 }
 
 
-/***************
-
-DIV
-First Rectangle
-
-***************/
-
-.firstRectangle {
-  margin-top: 0;
-  background-color: #64B5F6;
-  width 900px;
-  height: 630px;
-  border-radius: 3px;
-}
-
-.firstRectangle .textTop{
-  color: whitesmoke;
-}
-
-.firstRectangle ul {
-  text-align: center;
-  list-style: none;
-  margin-left: -2px;
-}
-
-.firstRectangle li {
-  font-family:  'Oswald', sans-serif;
-  font-weight: 600;  
-  color: whitesmoke;
-}
-
-.firstRectangle p{
-  font-size: 15px;
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-  font-weight: 600;
-  color: #263238;
-}
-
-.topFirstRectangle{
-  margin-bottom: 10px;
-  height: 290px;
-  background-color:blanchedalmond;
-  border-radius: 3px;
-}
-
-.textTopFirstRectangle{
-  margin-top: 0;
-  font-weight: 600;
-  font-size: 16px;
-  margin-left: 0;
-}
-
-.parentImg {
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.childImg {
-  width: 140px;
-  height: 140px;
-  border-radius: 3px;
-  border-color: aliceblue;
-  margin-bottom: 0;
-
-}
-
-.nom {
-  text-align: center;
-  margin: 10px auto 5px auto;
-  width: 129px;
-  height: 40px;
-  padding: 5px;
-}
-
-h5 {
-  color: #263238;
-  text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: -3px;
-  font-family: 'Oswald';
-}
-
-@media screen and (min-width: 40em) {
-  .nom {
-    width: 170px;
-    height: 40px;
-  }
-
-  .firstRectangle {
-    height: 530px;
-  }
-
-  .topFirstRectangle{
-    height: 300px;
-  }
-
-}
-
-@media screen and (min-width: 64em) {
-  .nom {
-    width: 127px;
-    height: 40px;
-  }
-
-  .firstRectangle {
-    height: 490px;
-    margin-top: 30px;
-  }
-  .textTopFirstRectangle{
-    margin-top: 30px;
-    margin-left: 10px;
-  }
-
-  .childImg {
-    margin-bottom: 10px;
-  }
-
-  .topFirstRectangle{
-    height: 200px;
-  }
+/**GROWEARTH MAP PROPERTIES**/
+.growEarth {
+  background: url('../images/earth_map.svg') repeat-x;
+  width: 258%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  will-change: transform;
+  animation: slide 20s linear infinite;
 }
 
 
-/***************
+/**
+MOONSECTION CSS PART
+**/
 
-DIV
-White Rectangle
-
-***************/
-
-.phone p {
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif;
-  color: whitesmoke;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.mail p {
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif;
-  color: whitesmoke;
-  margin-top: 20px;
-}
-
-.mail p, .phone p{
-  display: none;
-  visibility: hidden;
-  background-color: #64B5F6
-    ;
-  padding: 5px;
-  border-radius: 3px;
-
-}
-
-.mail p, .phone p {
-  margin-bottom: 33px;
-  margin-top: -7px;
+/**MOONSECTIONON PROPERTY*/
+.moonSectionOn {
+  transition: opacity 1s ease-in-out 1s;
 }
 
 
-.mailMediumSmall, .phoneMediumSmall {
-  display: none;
-  visibility: hidden; 
+/**MOONSECTIONOFF PROPERTY*/
+.moonSectionOff {
+  transition: opacity 1s ease-in-out;
 }
 
-.mailMediumSmall, .phoneMediumSmall {
-  display: inherit;
-  visibility: visible; 
-  text-align: center;
-  margin-top: 70px;
-}
-
-.mailMediumSmall img, .phoneMediumSmall img {
-  width: 30px;
-  height: 30px;
-  z-index: 3;
-}
-
-@media screen and (min-width: 40em) {
-  .mail p, .phone p{
-    display: none;
-    visibility: hidden;
-  }
-
-}
-
-@media screen and (min-width: 64em) {
-  .mail p, .phone p{
-    display:inherit;
-    visibility:visible;
-  }
-  .mailMediumSmall, .phoneMediumSmall {
-    display: none;
-    visibility: hidden; 
-  }
-}
-/***************
-
-DIV
-Last Rectangle
-
-***************/
-
-.lastRectangle {
-  background-color: #64B5F6
-    ;
-  width: 387px;
-  height: 243px;
-  border-radius: 3px;
-  padding-top: 5px;
-}
-
-.lastRectangle li {
-  color: whitesmoke;
-  font-size: 16px;
-  font-weight: 600;
-  list-style: none;
-}
-
-.work {
-  padding: 5px;
-  margin-top: 3px;
-  width: 127px;
-  height: 40px;
-  text-align: center;
-  margin: auto;
-}
-
-.available {
-  padding: 5px;
-  text-align: center;
-  width: 127px;
-  height: 40px;
-  margin-top: -5px;
-  margin: auto;
-}
-
-.bgLine {
-  background-color: white;
-  padding-top: 60px;
-  height: 60px;
-}
-
-.line2 {
-  background-color: #64B5F6;
-  width: 200px;
-  margin: -20px auto 0 auto;
-  height: 5px;
-  border-radius: 3px;
-  margin-top: 60px;
-}
-
-@media screen and (min-width: 40em) {
-  .work {
-    width: 170px;
-    height: 40px;
-  }
-  .available {
-    width: 170px;
-    height: 40px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .work {
-    width: 127px;
-    height: 40px;
-  }
-  .available {
-    width: 127px;
-    height: 40px;
-  }
-}
-
-
-/**************
-===============
-===============
-==SECOND PART==
-===============
-===============
-**************/
-
-.bgSecondPart {
-  background-color: white;
-  box-shadow: 0 5px 5px grey;
-}
-
-.secondPart p,
-.thirdPart p,
-.fourthPart p,
-.fifthPart p {
-  font-family: 'Oswald';
-  font-size: 15px;
-  text-align: center;
-}
-
-.secondPart,
-.thirdPart,
-.fourthPart,
-.fifthPart {
-  border-radius: 3px;
-}
-
-.secondPart {
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-h2 {
-  color: #212121;
-  font-weight: bold;
-  text-align: center;
-  font-size: 40px;
-}
-
-@media screen and (min-width: 40em) {
-  .secondPart p,
-  .thirdPart p,
-  .fourthPart p,
-  .fifthPart p {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 60px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  h2 {
-    font-size: 80px;
-  }
-}
-
-
-/**************
-===============
-===============
-==THIRD PART===
-===============
-===============
-**************/
-
-.bgThirdPart {
-  background-color: whitesmoke;
-  margin-top: 8px;
-  box-shadow: 0 5px 5px grey;
-}
-
-.thirdPart {
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-
-/**************
-===============
-===============
-==FOURTH PART==
-===============
-===============
-**************/
-
-.bgFourthPart {
-  background-color: #00162D;
-  box-shadow: 0 5px 5px grey;
-  height: 430px;
-  width: 100%;
-}
-
-@media screen and (min-width: 40em) {
-  .bgFourthPart {
-    height: 600px;
-  }
-  h6 {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .bgFourthPart {
-    height: 840px;    
-  }
-  h6 {
-    font-size: 15px;
-  }
-}
-
-.fourthPart {
-  margin-top: 30px;
-  color: whitesmoke;
-}
-
-.fourthPart h2 {
-  color: whitesmoke;
-}
-
-h6 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.picturesFourthPart img {
-  width: 70px;
-  height: 70px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  transition: transform 0.9s;
-}
-
-.picturesFourthPart img:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-@media screen and (min-width: 40em) {
-  .picturesFourthPart img {
-    width: 130px;
+/**MOONSECTION PROPERTIES**/
+.moonSection {
+    overflow: hidden;
     height: 130px;
-  }
-  h6 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .picturesFourthPart img {
-    width: 220px;
-    height: 220px;
-  }
-  h6 {
-    font-size: 20px;
-  }
+    width: 130px;
+    top: 50%;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: 160px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px whitesmoke;
+    filter: blur(0.75px);
+    position: absolute;
+    z-index: 8;
 }
 
 
-/**************
-===============
-===============
-==FIFTH PART===
-===============
-===============
-**************/
+/**GROWMOON MAP PROPERTIES**/
 
-.fifthPart {
-  margin-top: 30px;
-  margin-bottom: 30px;
+
+
+
+.growMoon {
+  background: url('../images/moon_map.svg') repeat-x;
+  width: 258%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+  will-change: transform;
+  animation: slide 20s linear infinite;
 }
 
-.fifthPart ul {
-  margin-top: auto;
-  margin-bottom: auto;
-  list-style: none;
-  text-align: center;
+
+.growEarthMoon {
+  background: url('../images/earth_map.svg') repeat-x;
+  width: 258%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+  will-change: transform;
+  animation: slide 20s linear infinite;
 }
 
-.rectangleFifthPartFirstLine {
-  display: flex;
-  height: 250px;
+
+.earthSectionMoon {
+  overflow: hidden;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    margin-top: -175px;
+    left: 50%;
+    margin-left: -340px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #00C7FF;
+    filter: blur(0.75px);
+    position: absolute;
+    z-index: 8;
 }
 
-.line3 {
-  background-color: #64B5F6;
-  width: 200px;
-  margin: 25px auto 25px auto;
-  height: 5px;
-  border-radius: 3px;
+
+/**
+MARSSECTION CSS PART
+**/
+
+/**MARSSECTIONON PROPERTY*/
+.marsSectionOn {
+  transition: opacity 1s ease-in-out 1s;
 }
 
-.rectangleFifthPartSecondLine {
-  display: flex;
-  height: 90px;
+
+/**MARSSECTIONOFF PROPERTY*/
+.marsSectionOff {
+  transition: opacity 1s ease-in-out;
 }
 
-h3 {
-  text-align: center;
-  background-color: #64B5F6;
-  color: whitesmoke;
-  transition-duration: 0.5s;
-  padding: 10px 10px 10px 10px;
-  border-radius: 3px;
-  font-family: 'Oswald', sans-serif;
-  margin: auto;
-  font-size: 30px;
+/**MARSSECTION PROPERTIES**/
+.marsSection {
+  overflow: hidden;
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: 130px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px coral;
+    filter: blur(0.75px);
+    position: absolute;
+    z-index: 8;
 }
 
-.fifthPart li {
-  font-size: 15px;
+
+/**GROWMARS MAP PROPERTIES**/
+.growMars {
+  background: url('../images/mars_map.svg') repeat-x;
+  width: 258%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+  will-change: transform;
+  animation: slide 20s linear infinite;
 }
 
-.rectangleFifthPartSecondLine ul{
-  margin: auto;
+
+.earthSectionMars {
+ overflow: hidden;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    margin-top: -175px;
+    left: 50%;
+    margin-left: -340px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #00C7FF;
+    filter: blur(0.75px);
+    position: absolute;
+    z-index: 8;
 }
 
-.rectangleFifthPartSecondLine h3 {
-  height: 60px;
-}
 
-.rectangleFifthPartFirstLine h3 {
-  height: 150px;
-}
 
-@media screen and (min-width: 40em) {
-  .rectangleFifthPartSecondLine ul{
-    /**margin: auto 0 auto 20px;**/
-  }
 
-  .fifthPart ul {
-    list-style: inherit;
-    text-align: inherit;
-  }
 
-  h3 {
-    margin: auto;
-  }
 
-  .rectangleFifthPartSecondLine h3 
-  {
-    margin: auto;
-  }
 
-  .rectangleFifthPartFirstLine h3 {
-    margin: auto;
+/**ALLOW THE MAPS TO SLIDE**/
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
-
-  .fifthPart li {
-    font-size: 15px;
-  }
-
-  .rectangleFifthPartFirstLine {
-    height: 340px;
-  }
-
-  .rectangleFifthPartSecondLine{
-    height: 100px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .rectangleFifthPartSecondLine ul{
-    /**margin: auto 0 auto 20px;**/
-  }
-
-  .fifthPart ul {
-    list-style: inherit;
-    text-align: inherit;
-  }
-
-  .fifthPart li {
-    font-size: 20px;
-  }
-  .rectangleFifthPartFirstLine {
-    height: 400px;
-  }
-  .rectangleFifthPartSecondLine{
-    height: 120px;
+  to {
+    transform: translateX(-50%); 
   }
 }
 
 
-/**************
-===============
-===============
-====FOOTER=====
-===============
-===============
-**************/
 
-#footer {
-  height: 130px;
-  background-color: #00162D;
+.earthRocketLaunched {
+      width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -156px;
+    left: 50%;
+    margin-left: 53px;
+    position: absolute;
+    z-index: 12;
+  transform-origin: 180px;
+	animation: earthRocketMove 15s linear infinite;
 }
 
-.line4 {
-  height: 50px;
-  width: 3px;
-  margin-top: -45px;
-  background-color: aqua;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 3px;
+
+@keyframes earthRocketMove{ 
+	0% { -webkit-transform: rotate(0deg);transform:rotate(0deg);}
+	20% { -webkit-transform: rotate(90deg);transform:rotate(90deg);}
+	40% { -webkit-transform: rotate(180deg);transform:rotate(180deg);}
+	60% { -webkit-transform: rotate(270deg);transform:rotate(270deg);}
+	80% { -webkit-transform: rotate(360deg);transform:rotate(360deg);} 
+  100% { -webkit-transform: rotate(360deg);transform:rotate(360deg);} 
 }
 
-.divFlex {
-  display: flex;
+
+
+.moonRocketLaunched {
+      width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 12;
+  transform-origin: 140px;
+    animation: moonRocketMove 20s linear infinite;
 }
 
-.footerP {
-  display: flex;
+
+@keyframes moonRocketMove{ 
+	0% {
+      opacity: 0;
+      transform: translate(-300px, -20px) rotate(75deg);
+  }
+	20% {
+      opacity: 1;
+      transform: translate(90px, -140px) rotate(65deg);
+  }
+	50% {
+      opacity: 1;
+      transform: translate(90px, -140px) rotate(360deg);
+  }
+  75% {
+    opacity: 1;
+      transform: translate(90px, -140px) rotate(640deg);
+  }
+	100% {
+      opacity: 0;
+      transform: translate(-380px, -240px) rotate(640deg);
+  } 
+}
+  
+
+.marsRocketLaunched {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -156px;
+    left: 50%;
+    margin-left: 53px;
+    position: absolute;
+    z-index: 12;
+    animation: marsRocketMove 20s linear infinite;
 }
 
-.p1, .divFlex p {
-  color: whitesmoke;
-  margin: 18px auto 0 auto;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: 'Oswald', sans-serif;
+
+@keyframes marsRocketMove{ 
+	0% {
+      transform: translate(-250px, 100px) rotate(80deg);
+  }
+	45% {
+      transform: translate(170px,30px) rotate(80deg);
+  }
+  50% {
+      transform: translate(120px,30px) rotate(260deg);
+  }
+ 55% {
+      transform: translate(120px,30px) rotate(260deg);
+  }
+  90% {
+      transform: translate(-250px, 100px) rotate(260deg);
+  } 
+	100% {
+      transform: translate(-250px, 100px) rotate(80deg);
+  } 
 }
 
-.retributions,
-.retributions a {
-  color: whitesmoke;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  margin-top: 7px;
+
+.rocketOn {
+  transition: opacity 2s ease-in-out 4s;
 }
 
-@media screen and (min-width: 40em) {
-  .p1, .divFlex p {
-    color: whitesmoke;
-    margin: 18px auto 0 auto;
+/**MARSOFF PROPERTY*/
+.rocketOff {
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+
+
+.logo .spaceX {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 500px;
+}
+
+/***** CONTAIN EARTH *****/
+
+.containEarth {
+      width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: 30;
+}
+
+.containEarth h2 {
+    color: #30769E;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px #7dc7EE;
+  margin: 30px 0 30px 0;
+}
+
+.containEarth p {
+    color: #30769E;
+}
+
+
+/******************************\
+          
+      INFOS SECTION EARTH
+
+/*******************************/
+
+.containEarth .infos-section {
+    position: absolute;
+    margin-top: 12%;
+    left: -8%;
+    width: 400px;
+    height: 300px;
+}
+
+.containEarth .infos-section .background {
+    position: absolute;
+    top: -150px;
+    left: -165px;
+}
+
+.containEarth .infos-section .title {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 21%;
+    font-family: 'space_light', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-  }
-  .line4 {
-    margin-top: -55px;
-  }
 }
 
-@media screen and (min-width: 64em) {
-  .p1, .divFlex p {
-    font-size: 20px;
-  }
-  .line4 {
-    margin-top: -55px;
-  }
+.containEarth .infos-section .description {
+    font-family: 'roboto_regular', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 3%;
+    margin-right: 10%;
 }
+
+
+/**********************\
+
+     EARTH SECTION
+
+/**********************/
+
+.containEarth .planet-section {
+    position: absolute;
+    margin-top: 28%;
+    /* center trick */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* effects */
+    box-shadow: 0 0 25px 10px #182d52 inset, 0 0 50px #182d52;
+    /* filter: drop-shadow(5px 5px 15px #182d52); */
+}
+
+
+/*** EARTH PLANISPHERE ***/
+
+.containEarth .planet-section .planet {
+    position: absolute;
+    width: 248%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url('../images/Earth.png') repeat-x;
+    background-size: 52%;
+    /* box-shadow: -100px 10px 100px 0px #182d52 inset; */
+    will-change: transform;
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-52%);
+    }
+}
+
+/*** EARTH EFFECT DIV BEHIND THE PLANET ***/
+
+.containEarth .planet-section .planet-for-effect {
+    position: absolute;
+    width: 248%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url('../images/Earth-inverse.png') repeat-x;
+    background-size: 52%;
+    filter: blur(3px);
+    will-change: opacity;
+    opacity: 0.75;
+    /* box-shadow: -100px 10px 100px 0px #182d52 inset; */
+    will-change: transform;
+    animation: slideEffect 20s linear infinite;
+}
+
+@keyframes slideEffect {
+    from {
+        transform: translateX(-52%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/*******************************\
+
+    ACTIONS SECTION EARTH
+
+/********************************/
+
+.containEarth .action-section {
+    left: 35%;
+    position: absolute;
+    margin-top: 55%;
+    width: 400px;
+    height: 100px;
+}
+
+.containEarth .action-section a {
+    display: inline-block;
+    margin-top: 6%;
+}
+
+.containEarth .action-section h2 {
+    display: inline-block;
+    font-family: 'space_regular', sans-serif;
+    font-size: 34px;
+    text-align: center;
+}
+
+.containEarth .action-section img {
+    width: 60px;
+}
+
+.containEarth .action-section .prev {
+    margin-left: 5%;
+}
+
+.containEarth .action-section .planet-name {
+    position: relative;
+    bottom: 15.5%;
+    left: 12%;
+}
+
+.containEarth .action-section .next {
+    margin-left: 25%;
+}
+
+
+
+/*****************************\
+
+      TEXTS SECTION EARTH
+
+/******************************/
+
+.containEarth .texts-section {
+    max-height: 100vh;
+    top: 50%;
+    /* margin-top: -8vw; */
+    left: 100%;
+    position: absolute;
+    transform: translate(-100%,-50%);
+}
+
+.containEarth .title-section {
+    font-family: 'space_light', sans-serif;
+    font-size: 20px;
+}
+
+.containEarth .texts-section p {
+    font-family: 'roboto_regular', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+          width: 340px;
+}
+
+.containEarth .texts-section img {
+    position: relative;
+    top:  10px;
+    width: 40px;
+}
+
+.containEarth .texts-section .mission-section {
+}
+
+
+.containEarth .mission-section .title-section .mission {
+    display: inline-block;
+}
+
+.containEarth .texts-section .rocket-section {
+}
+
+
+.containEarth .rocket-section .title-section .mission {
+    display: inline-block;
+}
+
+
+.containEarth .texts-section .datas-section {
+}
+
+
+.containEarth .datas-section .title-section .mission {
+    display: inline-block;
+}
+
+
+/**********************\
+
+      CLASS FOR JS
+
+/**********************/
+
+
+.displayNone {
+    overflow: hidden;
+    height: 0;
+    will-change: opacity;
+    opacity: 0;
+}
+
+.displayYes {
+    overflow: hidden;
+    height: auto;
+    will-change: opacity;
+    opacity: 1;
+    transition: opacity 0.75s ease-in;
+}
+
+
+
+
+
+
+
+
